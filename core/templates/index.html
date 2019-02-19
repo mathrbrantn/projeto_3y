@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}
+	Início | {{ block.super }}
+{% endblock %}
+
+{% block container %}
+<div class="jumbotron page-header">
+  <h1>Curso De Universitário</h1>
+  <p>Meio enrolado com uma cadeira na universidade? Quer fazer algo além do curso? Ou apenas bateu uma vontade de aprender algo novo? Se cadastre e depois corra para se inscrever em um dos curso do C.D.U.</p>
+  <p><a href="{% url 'accounts:register' %}" class="btn btn-primary">EU QUERO!</a></p> 
+</div>
+{% endblock %}
