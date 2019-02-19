@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+	{{ category }} | {{ block.super }}
+{% endblock %}
+
+{% block container %}
+<div class="page-header">
+	<h1>{{ category }}</h1>
+</div>
+<div class="row">
+    {% for product in products %}
+    {% include "catalog/_product.html" %}
+    {% endfor %}
+</div>
+{% endblock %}

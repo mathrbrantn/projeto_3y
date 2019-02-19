@@ -1,0 +1,13 @@
+<div class="col-sm-6 col-md-4" width="33%" length="33%">
+    <div class="thumbnail">
+        <a href="{% url 'catalog:product' product.slug %}">
+            <img src="{{ product.image.url }}" width="250" length="350"></img>
+        </a>
+        <div class="caption">
+            <h3>{{ product.name }}</h3>
+            {{ product.description|linebreaks }}
+            <p>Instrutor: {{ product.instrutor}}</p>
+            <p><a href="{% url 'catalog:product' product.slug %}" class="btn btn-success">Detalhes</a> <a href="{% url 'catalog:end' product.slug %}" class="btn btn-default">R${{ product.price }}</a></p>
+        </div>
+    </div>
+</div>

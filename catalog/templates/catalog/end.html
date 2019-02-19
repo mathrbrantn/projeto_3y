@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ product }}
+{% endblock %}
+
+{% block container %}
+<div class="page-header">
+  <h1>{{ product }}</h1>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+      <h2>Você está sendo redirecionado para a página de cadastro final e pagamento (se houver) do curso {{ product.name }}.</h2>
+  </div>
+</div>
+{% endblock %}
